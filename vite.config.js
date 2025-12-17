@@ -4,5 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/My-Dev-Portfolio-",
+  // Use relative base so assets load correctly regardless of repo name / hosting path
+  base: "./",
 });
